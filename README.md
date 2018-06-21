@@ -8,7 +8,7 @@ Requirements
 
 * PHP >= 5.4
 * Google calendar API credentials.json (as a service) from https://console.developers.google.com
-* credentials.json dir folder should be on a ENV variable
+* credentials.json dir folder should be on a ENV variable (example: /home/ubuntu/credentials.json)
 
 Features
 --------
