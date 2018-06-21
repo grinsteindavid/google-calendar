@@ -3,6 +3,11 @@ Manage events and calendars on a Google Calendar
 
 This package makes working with a Google Calendar a breeze.
 
+Features
+--------
+
+* Manage any number of calenders and its events with less code
+
 Requirements
 --------
 
@@ -10,10 +15,11 @@ Requirements
 * Google calendar API credentials.json (as a service) from https://console.developers.google.com
 * credentials.json dir folder should be on a ENV variable (example: /home/ubuntu/credentials.json)
 
-Features
+Installation
 --------
+You can install the package via composer:
 
-* Manage any number of calenders and its events with less code
+composer require grinsteindavid/google-calendar
 
 Usage
 --------
