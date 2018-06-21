@@ -1,15 +1,54 @@
-Composer Library Template
+Manage events and calendars on a Google Calendar
 =========================
 
-If you are trying to create a new PHP Composer library, whether it will be going to submitted to packagist.org or just in your Github account, this template of files will surely help you make the process a lot easier and faster.
+This package makes working with a Google Calendar a breeze.
+
+Requirements
+--------
+
+* PHP >= 5.4
+* Google calendar API credentials.json (as a service) from https://console.developers.google.com
+* credentials.json dir folder should be on a ENV variable
 
 Features
 --------
 
-* PSR-4 autoloading compliant structure
-* Unit-Testing with PHPUnit
-* Comprehensive Guides and tutorial
-* Easy to use to any framework or even a plain php file
+* Manage any number of calenders and its events with less code
 
+Usage
+=====
 
-I encourage that you put more information on this readme file instead of leaving it as is. See [http://www.darwinbiler.com/designing-and-making-the-readme-file-for-your-github-repository/](How to make a README file) for more info.
+use Grinsteindavid\GoogleCalendar\Calendar;
+use Grinsteindavid\GoogleCalendar\Event;
+
+$calendar = new Calendar();
+$calendar->summary = 'Summer';
+$calendar->save();
+
+$event = new Event($calendar->id);
+$event->summary = 'First Event';
+$event->startDateTime = date("Y-m-d H:i:s", strtotime('+1 hours'));
+$event->endDateTime = date("Y-m-d H:i:s", strtotime('+4 hours'));
+$event->save();
+
+foreach ($calendar->events() as $event) {
+    $event->description = 'Hottest summer!';
+    $event->save(); // UPDATED BY ATTRS
+
+    $event->update([  // UPDATED BY PARAMS
+    	'description' => 'Hottest summer!'
+    ]);
+}
+
+$event = new Event($calendar->id, $calendar->events[0]->id);
+$event->attendees = [
+    [
+        'email' => 'example1@email.com',
+        'displayName' => 'example 1'
+    ],
+    [
+        'email' => 'example2@email.com',
+        'displayName' => 'example 2'
+    ]
+];
+$event->save();
