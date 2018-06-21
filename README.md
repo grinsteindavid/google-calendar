@@ -41,7 +41,8 @@ foreach ($calendar->events() as $event) {
     ]);
 }
 
-$event = new Event($calendar->id, $calendar->events[0]->id);
+$calendar2 = new Calendar($calendarId);
+$event = new Event($calendar2->id, $calendar2->events[0]->id);
 $event->attendees = [
     [
         'email' => 'example1@email.com',
