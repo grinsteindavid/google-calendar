@@ -1,0 +1,25 @@
+{
+    "name": "grinsteindavid/googleCalendar",
+    "description": "Google calendar lib.",
+    "keywords": ["google calendar", "calendar", "php", "laravel"],
+    "license": "DBAD",
+    "authors": [
+        {
+            "name": "David Grinstein",
+            "email": "davidmirandagrinstein@gmail.com"
+        }
+    ],
+    "type": "project",
+    "require": {
+		"php": ">=5.4"
+    },
+	"require-dev": {
+		"phpunit/phpunit": "5.2.*",
+        "google/apiclient": "^2.0"
+    },
+	"autoload": {
+        "psr-4": {
+            "Grinsteindavid\\GoogleCalendar\\": "src/"
+        }
+    }
+}
