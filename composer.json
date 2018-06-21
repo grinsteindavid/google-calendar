@@ -1,12 +1,21 @@
 {
     "name": "grinsteindavid/google-calendar",
-    "description": "Google calendar lib.",
-    "keywords": ["google calendar", "calendar", "php", "laravel"],
-    "license": "DBAD",
+    "description": "Manage events on a Google Calendar",
+    "keywords": [
+        "calendar",
+        "google",
+        "event",
+        "schedule",
+        "laravel-google-calendar",
+        "php"
+    ],
+    "license": "MIT",
     "authors": [
         {
             "name": "David Grinstein",
-            "email": "davidmirandagrinstein@gmail.com"
+            "email": "davidmirandagrinstein@gmail.com",
+            "homepage": "https://github.com/grinsteindavid/",
+            "role": "Developer"
         }
     ],
     "type": "project",

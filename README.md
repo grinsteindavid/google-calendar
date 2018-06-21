@@ -16,7 +16,7 @@ Features
 * Manage any number of calenders and its events with less code
 
 Usage
-=====
+--------
 
 ```php
 use Grinsteindavid\GoogleCalendar\Calendar;
