@@ -18,7 +18,6 @@
             "role": "Developer"
         }
     ],
-    "type": "project",
     "require": {
 		"php": ">=5.4"
     },
