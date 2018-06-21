@@ -1,5 +1,5 @@
 {
-    "name": "grinsteindavid/googleCalendar",
+    "name": "grinsteindavid/google-calendar",
     "description": "Google calendar lib.",
     "keywords": ["google calendar", "calendar", "php", "laravel"],
     "license": "DBAD",
