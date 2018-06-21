@@ -18,6 +18,7 @@ Features
 Usage
 =====
 
+```php
 use Grinsteindavid\GoogleCalendar\Calendar;
 use Grinsteindavid\GoogleCalendar\Event;
 
@@ -52,3 +53,4 @@ $event->attendees = [
     ]
 ];
 $event->save();
+```
