@@ -21,7 +21,7 @@
     ],
     "require": {
         "php": "^7.0",
-        "google/apiclient": "^2.2",
+        "google/apiclient": "^2.2"
     },
     "autoload": {
         "psr-4": {
