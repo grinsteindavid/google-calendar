@@ -9,6 +9,7 @@
         "laravel-google-calendar",
         "php"
     ],
+    "homepage": "https://github.com/grinsteindavid/",
     "license": "MIT",
     "authors": [
         {
@@ -19,13 +20,27 @@
         }
     ],
     "require": {
-		"php": "^7.0",
-        "google/apiclient": "^2.2"
+        "php": "^7.0",
+        "google/apiclient": "^2.2",
+        "illuminate/support": "^5.4.0"
     },
-	"autoload": {
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "~3.4.6",
+        "phpunit/phpunit": "^6.2"
+    },
+    "autoload": {
         "psr-4": {
-            "Grinsteindavid\\GoogleCalendar\\": "src/"
+            "GrinsteinDavid\\GoogleCalendar\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GrinsteinDavid\\GoogleCalendar\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
     },
     "config": {
         "sort-packages": true
