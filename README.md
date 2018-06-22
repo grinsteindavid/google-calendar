@@ -69,4 +69,12 @@ $event->attendees = [
     ]
 ];
 $event->save();
+
+
+array_push($event->attendees, [
+    'email' => 'example3@email.com',
+    'displayName' => 'example 3'
+]);
+
+$event->save();
 ```
