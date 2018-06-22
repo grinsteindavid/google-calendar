@@ -12,7 +12,7 @@ Requirements
 --------
 
 * Google calendar API credentials.json (as a service) from https://console.developers.google.com
-* credentials.json dir folder should be on a ENV variable (example: /home/ubuntu/credentials.json)
+* credentials.json dir folder should be on a ENV variable named "GOOGLE_CALENDAR_CREDENTIALS" (example: GOOGLE_CALENDAR_CREDENTIALS=/home/ubuntu/credentials.json)
 
 Installation
 --------
