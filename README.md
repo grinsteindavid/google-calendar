@@ -24,8 +24,8 @@ Usage
 --------
 
 ```php
-use Grinsteindavid\GoogleCalendar\Calendar;
-use Grinsteindavid\GoogleCalendar\Event;
+use GrinsteinDavid\GoogleCalendar\Calendar;
+use GrinsteinDavid\GoogleCalendar\Event;
 
 $calendar = new Calendar();
 $calendar->summary = 'Summer';

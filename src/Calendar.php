@@ -1,8 +1,8 @@
 <?php 
 
-namespace Grinsteindavid\GoogleCalendar;
+namespace GrinsteinDavid\GoogleCalendar;
 
-use Grinsteindavid\GoogleCalendar\Event;
+use GrinsteinDavid\GoogleCalendar\Event;
 
 class Calendar
 {
