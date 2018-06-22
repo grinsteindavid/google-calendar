@@ -23,20 +23,10 @@
         "php": "^7.0",
         "google/apiclient": "^2.2",
     },
-    "require-dev": {
-    },
     "autoload": {
         "psr-4": {
             "GrinsteinDavid\\GoogleCalendar\\": "src"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "GrinsteinDavid\\GoogleCalendar\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit"
     },
     "config": {
         "sort-packages": true
