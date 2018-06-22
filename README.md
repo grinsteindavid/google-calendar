@@ -32,6 +32,7 @@ $calendar->summary = 'Summer';
 $calendar->save();
 
 $event = new Event($calendar->id);
+$event->timeZone = "America/New_York";
 $event->summary = 'First Event';
 $event->startDateTime = date("Y-m-d H:i:s", strtotime('+1 hours'));
 $event->endDateTime = date("Y-m-d H:i:s", strtotime('+4 hours'));
@@ -47,7 +48,16 @@ foreach ($calendar->events() as $event) {
 }
 
 $calendar2 = new Calendar($calendarId);
-$event = new Event($calendar2->id, $calendar2->events()[0]->id);
+
+$events = $calendar2->events();
+
+$event = new Event($calendar2->id, $calendar2->events[0]->id);
+$event->organizerEmail = 'example1@email.com';
+$event->organizerName = "David Miranda Grinstein";
+$event->guestsCanInviteOthers = true;
+$event->guestsCanModify = true;
+$event->guestsCanSeeOtherGuests = true;
+$event->anyoneCanAddSelf = true;
 $event->attendees = [
     [
         'email' => 'example1@email.com',
